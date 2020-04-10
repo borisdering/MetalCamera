@@ -11,9 +11,7 @@
 		9F4F1DCC243F7884001968F4 /* MetalCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F1DCB243F7884001968F4 /* MetalCameraTests.swift */; };
 		9F4F1DCE243F7884001968F4 /* MetalCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4F1DC0243F7883001968F4 /* MetalCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8BDF48243FA1F700C51D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF47243FA1F700C51D3B /* AppDelegate.swift */; };
-		9F8BDF4A243FA1F700C51D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF49243FA1F700C51D3B /* SceneDelegate.swift */; };
 		9F8BDF4C243FA1F700C51D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF4B243FA1F700C51D3B /* ViewController.swift */; };
-		9F8BDF4F243FA1F700C51D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BDF4D243FA1F700C51D3B /* Main.storyboard */; };
 		9F8BDF51243FA1F800C51D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BDF50243FA1F800C51D3B /* Assets.xcassets */; };
 		9F8BDF54243FA1F800C51D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BDF52243FA1F800C51D3B /* LaunchScreen.storyboard */; };
 		9F8BDF5A243FA21000C51D3B /* MetalCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F1DBD243F7883001968F4 /* MetalCamera.framework */; };
@@ -59,11 +57,9 @@
 		9F4F1DC6243F7884001968F4 /* MetalCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4F1DCB243F7884001968F4 /* MetalCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCameraTests.swift; sourceTree = "<group>"; };
 		9F4F1DCD243F7884001968F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F8BDF45243FA1F700C51D3B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8BDF45243FA1F700C51D3B /* MetalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8BDF47243FA1F700C51D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F8BDF49243FA1F700C51D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9F8BDF4B243FA1F700C51D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F8BDF4E243FA1F700C51D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F8BDF50243FA1F800C51D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8BDF53243FA1F800C51D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8BDF55243FA1F800C51D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,7 +109,7 @@
 			children = (
 				9F4F1DBD243F7883001968F4 /* MetalCamera.framework */,
 				9F4F1DC6243F7884001968F4 /* MetalCameraTests.xctest */,
-				9F8BDF45243FA1F700C51D3B /* Example.app */,
+				9F8BDF45243FA1F700C51D3B /* MetalExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,9 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8BDF47243FA1F700C51D3B /* AppDelegate.swift */,
-				9F8BDF49243FA1F700C51D3B /* SceneDelegate.swift */,
 				9F8BDF4B243FA1F700C51D3B /* ViewController.swift */,
-				9F8BDF4D243FA1F700C51D3B /* Main.storyboard */,
 				9F8BDF50243FA1F800C51D3B /* Assets.xcassets */,
 				9F8BDF52243FA1F800C51D3B /* LaunchScreen.storyboard */,
 				9F8BDF55243FA1F800C51D3B /* Info.plist */,
@@ -224,7 +218,7 @@
 			);
 			name = Example;
 			productName = Example;
-			productReference = 9F8BDF45243FA1F700C51D3B /* Example.app */;
+			productReference = 9F8BDF45243FA1F700C51D3B /* MetalExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -290,7 +284,6 @@
 			files = (
 				9F8BDF54243FA1F800C51D3B /* LaunchScreen.storyboard in Resources */,
 				9F8BDF51243FA1F800C51D3B /* Assets.xcassets in Resources */,
-				9F8BDF4F243FA1F700C51D3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +312,6 @@
 			files = (
 				9F8BDF4C243FA1F700C51D3B /* ViewController.swift in Sources */,
 				9F8BDF48243FA1F700C51D3B /* AppDelegate.swift in Sources */,
-				9F8BDF4A243FA1F700C51D3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,14 +331,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9F8BDF4D243FA1F700C51D3B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F8BDF4E243FA1F700C51D3B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F8BDF52243FA1F800C51D3B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -580,9 +564,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.borisdering.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MetalExample;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -599,9 +583,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.borisdering.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MetalExample;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

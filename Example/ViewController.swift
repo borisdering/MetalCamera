@@ -9,7 +9,7 @@
 import UIKit
 import MetalCamera
 
-class ViewController: UIViewController {
+class ViewController: MetalCameraViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
