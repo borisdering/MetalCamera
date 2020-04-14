@@ -10,13 +10,16 @@
 		9F4F1DC7243F7884001968F4 /* MetalCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F1DBD243F7883001968F4 /* MetalCamera.framework */; };
 		9F4F1DCC243F7884001968F4 /* MetalCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F1DCB243F7884001968F4 /* MetalCameraTests.swift */; };
 		9F4F1DCE243F7884001968F4 /* MetalCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4F1DC0243F7883001968F4 /* MetalCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7BB9C42445CF1C0099B9D6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9F94E7D82445B075001C5580 /* Shaders.metal */; };
 		9F8BDF48243FA1F700C51D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF47243FA1F700C51D3B /* AppDelegate.swift */; };
 		9F8BDF4C243FA1F700C51D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF4B243FA1F700C51D3B /* ViewController.swift */; };
 		9F8BDF51243FA1F800C51D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BDF50243FA1F800C51D3B /* Assets.xcassets */; };
 		9F8BDF54243FA1F800C51D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BDF52243FA1F800C51D3B /* LaunchScreen.storyboard */; };
 		9F8BDF5A243FA21000C51D3B /* MetalCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F1DBD243F7883001968F4 /* MetalCamera.framework */; };
 		9F8BDF5B243FA21000C51D3B /* MetalCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F1DBD243F7883001968F4 /* MetalCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F8BDF60243FA23D00C51D3B /* MetalCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF5F243FA23D00C51D3B /* MetalCamera.swift */; };
+		9F8BDF60243FA23D00C51D3B /* MetalCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BDF5F243FA23D00C51D3B /* MetalCameraViewController.swift */; };
+		9F94E7D62445AF55001C5580 /* MetalCameraRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94E7D52445AF55001C5580 /* MetalCameraRenderer.swift */; };
+		9F94E7DC2445B300001C5580 /* MetalCameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94E7DB2445B300001C5580 /* MetalCameraSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +66,10 @@
 		9F8BDF50243FA1F800C51D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8BDF53243FA1F800C51D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8BDF55243FA1F800C51D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F8BDF5F243FA23D00C51D3B /* MetalCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCamera.swift; sourceTree = "<group>"; };
+		9F8BDF5F243FA23D00C51D3B /* MetalCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCameraViewController.swift; sourceTree = "<group>"; };
+		9F94E7D52445AF55001C5580 /* MetalCameraRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCameraRenderer.swift; sourceTree = "<group>"; };
+		9F94E7D82445B075001C5580 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9F94E7DB2445B300001C5580 /* MetalCameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCameraSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +123,10 @@
 		9F4F1DBF243F7883001968F4 /* MetalCamera */ = {
 			isa = PBXGroup;
 			children = (
+				9F94E7DA2445B097001C5580 /* Source */,
+				9F94E7D72445B05C001C5580 /* Shaders */,
 				9F4F1DC0243F7883001968F4 /* MetalCamera.h */,
 				9F4F1DC1243F7883001968F4 /* Info.plist */,
-				9F8BDF5F243FA23D00C51D3B /* MetalCamera.swift */,
 			);
 			path = MetalCamera;
 			sourceTree = "<group>";
@@ -150,6 +157,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F94E7D72445B05C001C5580 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				9F94E7D82445B075001C5580 /* Shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		9F94E7DA2445B097001C5580 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9F8BDF5F243FA23D00C51D3B /* MetalCameraViewController.swift */,
+				9F94E7D52445AF55001C5580 /* MetalCameraRenderer.swift */,
+				9F94E7DB2445B300001C5580 /* MetalCameraSession.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8BDF60243FA23D00C51D3B /* MetalCamera.swift in Sources */,
+				9F7BB9C42445CF1C0099B9D6 /* Shaders.metal in Sources */,
+				9F94E7D62445AF55001C5580 /* MetalCameraRenderer.swift in Sources */,
+				9F8BDF60243FA23D00C51D3B /* MetalCameraViewController.swift in Sources */,
+				9F94E7DC2445B300001C5580 /* MetalCameraSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
